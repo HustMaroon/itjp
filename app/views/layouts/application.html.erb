@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<<<<<<< HEAD
+  <title>Workspace</title>
+=======
+  <title>RailsFirst</title>
+>>>>>>> a89477c1ce827dfe2048afc38c39a6285cb2b959
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<<<<<<< HEAD
+<h3><%= link_to "Show book:", books_path%></h3>
+<% if user_signed_in? %>
+<h3>hello <%= current_user.email %></h3>
+
+<h3><%= link_to "log_out",   destroy_user_session_path, method: :delete %></h3>
+<% else %>
+<h3><%= link_to "sign in", new_user_session_path  %></h3>
+<h3><%= link_to "dang ki user", new_user_registration_path  %></h3>
+
+<% end %>
+=======
+
+>>>>>>> a89477c1ce827dfe2048afc38c39a6285cb2b959
+<%= yield %>
+
+</body>
+</html>
